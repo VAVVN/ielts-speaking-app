@@ -339,14 +339,14 @@ export default function App() {
               disabled={loading}
             >
               {isRecording ? <StopIcon /> : <MicIcon />}
-              {isRecording ? 'Stop recording' : 'Start speaking'}
+              {isRecording ? 'Ngừng nói' : 'Bắt đầu nói'}
             </button>
             {isRecording && <span className="recording-indicator">Listening...</span>}
             {isPunctuating && <span className="recording-indicator">Cleaning up transcript...</span>}
           </div>
           <textarea
             className="answer-input"
-            placeholder="Click “Start speaking” and answer out loud - your words will appear here. You can edit the text before submitting."
+            placeholder="Nhấn “Bắt đầu nói” và trả lời to lên - lời nói của bạn sẽ hiện ở đây. Bạn có thể chỉnh sửa trước khi gửi."
             value={answerText}
             onChange={(e) => setAnswerText(e.target.value)}
             rows={6}
