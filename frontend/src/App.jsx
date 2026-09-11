@@ -34,14 +34,6 @@ function StopIcon() {
   );
 }
 
-function CheckIcon() {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <polyline points="20 6 9 17 4 12" />
-    </svg>
-  );
-}
-
 function SpeakerIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -64,10 +56,11 @@ export default function App() {
   const [error, setError] = useState(null);
   const [isRecording, setIsRecording] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [isPunctuating, setIsPunctuating] = useState(false);
   const recognitionRef = useRef(null);
   const baseTextRef = useRef(''); // answer text already there before this recording started
   const audioRef = useRef(null); // currently playing sample-answer <audio> element, if any
-  const submitOnStopRef = useRef(false); // set when "Submit answer" is clicked while still recording
+  const wasRecordingRef = useRef(false); // detects the true -> false transition of isRecording
 
   useEffect(() => {
     fetch('/api/topics')
@@ -76,16 +69,16 @@ export default function App() {
       .catch(() => setError('Could not load topics. Is the backend running?'));
   }, []);
 
-  // Speech recognition finalizes the last bit of transcript asynchronously
-  // after .stop() is called, so we wait for isRecording to actually flip to
-  // false (in recognition.onend) before submitting - that guarantees we
-  // submit the fully transcribed text, not whatever was captured yet when
-  // the button was clicked.
+  // Runs once recording actually stops (isRecording flips to false) - not
+  // inside the button's click handler, because .stop() finalizes the last
+  // bit of transcript asynchronously, so we need the up-to-date answerText
+  // from the render after that happens, not a stale closure from when
+  // recording started.
   useEffect(() => {
-    if (!isRecording && submitOnStopRef.current) {
-      submitOnStopRef.current = false;
-      handleSubmit();
+    if (wasRecordingRef.current && !isRecording) {
+      punctuateAnswer();
     }
+    wasRecordingRef.current = isRecording;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isRecording]);
 
@@ -188,9 +181,36 @@ export default function App() {
     setIsRecording(true);
   }
 
-  function handleSubmitFromRecording() {
-    submitOnStopRef.current = true;
+  function stopRecording() {
     recognitionRef.current?.stop();
+  }
+
+  // Sends the raw transcript to the backend to get punctuation/capitalization
+  // added and obvious mis-transcriptions fixed, without changing the
+  // student's actual wording (see backend/server.js PUNCTUATE_SYSTEM_PROMPT).
+  async function punctuateAnswer() {
+    if (!answerText.trim() || !currentQuestion) return;
+    setIsPunctuating(true);
+
+    try {
+      const res = await fetch('/api/punctuate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ questionId: currentQuestion.id, text: answerText }),
+      });
+
+      if (!res.ok) {
+        throw new Error('Punctuate request failed');
+      }
+
+      const data = await res.json();
+      setAnswerText(data.text);
+    } catch (err) {
+      // Non-fatal: the raw transcript is still there and submittable as-is.
+      setError('Could not clean up the transcript automatically. You can still edit it before submitting.');
+    } finally {
+      setIsPunctuating(false);
+    }
   }
 
   async function handleSubmit() {
@@ -300,7 +320,7 @@ export default function App() {
       <header className="header">
         <h1>IELTS Speaking Practice</h1>
         <button className="back-link" onClick={handleBackToTopics}>
-          &larr; Back to topics
+          &larr; Quay lại các chủ đề
         </button>
       </header>
 
@@ -315,13 +335,14 @@ export default function App() {
             <button
               type="button"
               className={isRecording ? 'record-button recording' : 'record-button'}
-              onClick={isRecording ? handleSubmitFromRecording : startRecording}
+              onClick={isRecording ? stopRecording : startRecording}
               disabled={loading}
             >
-              {isRecording ? <CheckIcon /> : <MicIcon />}
-              {isRecording ? 'Submit answer' : 'Start speaking'}
+              {isRecording ? <StopIcon /> : <MicIcon />}
+              {isRecording ? 'Stop recording' : 'Start speaking'}
             </button>
             {isRecording && <span className="recording-indicator">Listening...</span>}
+            {isPunctuating && <span className="recording-indicator">Cleaning up transcript...</span>}
           </div>
           <textarea
             className="answer-input"
@@ -329,17 +350,15 @@ export default function App() {
             value={answerText}
             onChange={(e) => setAnswerText(e.target.value)}
             rows={6}
-            disabled={loading}
+            disabled={loading || isPunctuating}
           />
-          {!isRecording && (
-            <button
-              className="primary-button"
-              onClick={handleSubmit}
-              disabled={loading || !answerText.trim()}
-            >
-              {loading ? 'Getting feedback...' : 'Submit answer'}
-            </button>
-          )}
+          <button
+            className="primary-button"
+            onClick={handleSubmit}
+            disabled={loading || isRecording || isPunctuating || !answerText.trim()}
+          >
+            {loading ? 'Đang phản hồi...' : 'Gửi câu trả lời'}
+          </button>
           {error && <p className="error-text">{error}</p>}
         </section>
       )}
@@ -348,11 +367,11 @@ export default function App() {
         <section className="result-section">
           <div className="answer-comparison">
             <div className="answer-card">
-              <h3>Your answer</h3>
+              <h3>Bạn trả lời</h3>
               <p>{answerText}</p>
             </div>
             <div className="answer-card">
-              <h3>Modified answer</h3>
+              <h3>Mình điều chỉnh một chút nhé</h3>
               <p>{result.sample_answer}</p>
               <button
                 type="button"
@@ -360,17 +379,17 @@ export default function App() {
                 onClick={isSpeaking ? stopSpeaking : speakSampleAnswer}
               >
                 {isSpeaking ? <StopIcon /> : <SpeakerIcon />}
-                {isSpeaking ? 'Stop' : 'Listen'}
+                {isSpeaking ? 'Dừng' : 'Nghe'}
               </button>
             </div>
           </div>
 
           <div className="button-row">
             <button className="secondary-button" onClick={handleTryAgain}>
-              Try this question again
+              Thử lại câu hỏi này
             </button>
             <button className="primary-button" onClick={handleNextQuestion}>
-              {isLastQuestion ? 'Finish topic' : 'Next question'}
+              {isLastQuestion ? 'Finish topic' : 'Câu hỏi tiếp theo'}
             </button>
           </div>
         </section>

@@ -98,7 +98,7 @@ body {
 .primary-button {
   margin-top: 12px;
   padding: 10px 20px;
-  background: #1a1a1a;
+  background: #2e7d32;
   color: white;
   border: none;
   border-radius: 6px;
@@ -109,6 +109,15 @@ body {
 .primary-button:disabled {
   background: #aaa;
   cursor: not-allowed;
+}
+
+.result-section .primary-button {
+  background: #2e7d32;
+}
+
+.result-section .secondary-button {
+  color: #2e7d32;
+  border-color: #2e7d32;
 }
 
 .secondary-button {
@@ -196,8 +205,8 @@ body {
 .back-link {
   background: none;
   border: none;
-  color: #1a1a1a;
-  font-size: 14px;
+  color: #2e7d32;
+  font-size: 16px;
   cursor: pointer;
   padding: 0;
   margin-top: 4px;

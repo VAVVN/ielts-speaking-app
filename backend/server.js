@@ -99,6 +99,56 @@ Respond ONLY with valid JSON, no markdown fences, no preamble, in exactly this s
 
 If the student's answer is extremely short, off-topic, or empty, still return valid JSON: still provide a sample_answer showing what a fuller answer could look like for that question.`;
 
+// Raw speech-to-text transcripts have no punctuation/capitalization and
+// occasionally mis-hear a word. This prompt cleans that up WITHOUT changing
+// what the student actually said - the cleaned text is still what gets
+// scored/used later, so it must stay a faithful transcript, not a rewrite.
+const PUNCTUATE_SYSTEM_PROMPT = `You clean up raw speech-to-text transcripts of a student's spoken answer to an IELTS speaking question.
+
+The transcript has no punctuation or capitalization, and the speech recognizer may have mis-heard or dropped the occasional word.
+
+Given the question being answered and the raw transcript, produce a cleaned-up version:
+- Add correct punctuation, capitalization, and paragraph breaks where natural pauses would be.
+- If a word or short phrase is obviously mis-transcribed or garbled given the context of the question, correct it to the most likely intended word(s).
+- Do NOT rephrase, fix grammar mistakes, improve word choice, or otherwise change the student's actual wording - this must remain an authentic transcript of what they said, since it will be used to assess their English.
+- Do NOT add ideas or content the student didn't say. Do NOT remove hesitations or filler words (um, uh) if present.
+- If the transcript is empty or just noise, return it unchanged.
+
+Respond with ONLY the cleaned-up transcript text - no preamble, no quotes, no commentary.`;
+
+// POST /api/punctuate
+// body: { questionId: string, text: string }
+app.post('/api/punctuate', async (req, res) => {
+  try {
+    const { questionId, text } = req.body;
+
+    if (!text || !text.trim()) {
+      return res.status(400).json({ error: 'text is required' });
+    }
+
+    const question = questions.find((q) => q.id === questionId);
+    const userMessage = `Question: "${question ? question.prompt : '(unknown)'}"\n\nRaw transcript:\n"${text}"`;
+
+    const response = await anthropic.messages.create({
+      model: 'claude-sonnet-4-5',
+      max_tokens: 1000,
+      system: PUNCTUATE_SYSTEM_PROMPT,
+      messages: [{ role: 'user', content: userMessage }],
+    });
+
+    const cleanedText = response.content
+      .filter((block) => block.type === 'text')
+      .map((block) => block.text)
+      .join('')
+      .trim();
+
+    res.json({ text: cleanedText });
+  } catch (err) {
+    console.error('Error in /api/punctuate:', err);
+    res.status(500).json({ error: 'Something went wrong cleaning up the transcript.' });
+  }
+});
+
 // GET /api/questions -> list of all questions (id, part, topic, prompt)
 app.get('/api/questions', (req, res) => {
   res.json(questions);
