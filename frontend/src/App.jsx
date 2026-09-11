@@ -267,7 +267,7 @@ export default function App() {
       <div className="page">
         <header className="header">
           <h1>IELTS Speaking Practice</h1>
-          <p className="subtitle">Pick a topic to practice</p>
+          <p className="subtitle">Chọn chủ đề để luyện tập cho quý này (tháng 9-12 2026)</p>
         </header>
 
         {error && <p className="error-text">{error}</p>}
