@@ -346,7 +346,7 @@ export default function App() {
           </div>
           <textarea
             className="answer-input"
-            placeholder="Nhấn “Bắt đầu nói” và trả lời to lên - lời nói của bạn sẽ hiện ở đây. Bạn có thể chỉnh sửa trước khi gửi."
+            placeholder="Nhấn “Bắt đầu nói” và trả lời rõ - lời nói của bạn sẽ hiện ở đây. Bạn có thể chỉnh sửa trước khi gửi."
             value={answerText}
             onChange={(e) => setAnswerText(e.target.value)}
             rows={6}
