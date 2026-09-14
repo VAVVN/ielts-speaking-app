@@ -1403,7 +1403,6 @@
     "topic": "The area you live in",
     "prompt": "Do you know any of your neighbours?"
   },
-
   {
     "id": "p2-1",
     "part": 2,
@@ -1782,7 +1781,6 @@
     "topic": "Place to visit in free time",
     "prompt": "Describe a place you would like to visit in your free time. You should say: where it is, what you will do there, how long you will stay there, and explain why you would like to visit it."
   },
-
   {
     "id": "p3-1",
     "part": 3,
@@ -2347,7 +2345,7 @@
     "topic": "Cities",
     "prompt": "What’s the difference between the city and the countryside?"
   },
-   {
+  {
     "id": "p3-95",
     "part": 3,
     "topic": "Cities",
@@ -2550,5 +2548,1067 @@
     "part": 3,
     "topic": "Public behaviour",
     "prompt": "How can people consider others’ feelings when chatting in public?"
+  },
+  {
+    "id": "p3-129",
+    "part": 3,
+    "topic": "Popularity",
+    "prompt": "Is it always good to be a popular student at school?"
+  },
+  {
+    "id": "p3-130",
+    "part": 3,
+    "topic": "Popularity",
+    "prompt": "Why are some students popular?"
+  },
+  {
+    "id": "p3-131",
+    "part": 3,
+    "topic": "Decision making",
+    "prompt": "How can we tell the difference between an important and an easy decision?"
+  },
+  {
+    "id": "p3-132",
+    "part": 3,
+    "topic": "Decision making",
+    "prompt": "Do you think it is a good idea to make a small decision every day?"
+  },
+  {
+    "id": "p3-133",
+    "part": 3,
+    "topic": "Decision making",
+    "prompt": "What little decisions do people make every day?"
+  },
+  {
+    "id": "p3-134",
+    "part": 3,
+    "topic": "Decision making",
+    "prompt": "What if people in a group have different opinions on a decision?"
+  },
+  {
+    "id": "p3-135",
+    "part": 3,
+    "topic": "Decision making",
+    "prompt": "Do you think most of people's decisions are made in their 20s?"
+  },
+  {
+    "id": "p3-136",
+    "part": 3,
+    "topic": "Decision making",
+    "prompt": "Which is better, to make a decision quickly or slowly?"
+  },
+  {
+    "id": "p3-137",
+    "part": 3,
+    "topic": "Cities",
+    "prompt": "Some people say large cities are suitable for old people. What do you think?"
+  },
+  {
+    "id": "p3-138",
+    "part": 3,
+    "topic": "Change and plans",
+    "prompt": "Do you think it is good to change one's daily routine?"
+  },
+  {
+    "id": "p3-139",
+    "part": 3,
+    "topic": "Change and plans",
+    "prompt": "Do you think it is good to change jobs?"
+  },
+  {
+    "id": "p3-140",
+    "part": 3,
+    "topic": "Change and plans",
+    "prompt": "Is it good for people to get a job promotion?"
+  },
+  {
+    "id": "p3-141",
+    "part": 3,
+    "topic": "Change and plans",
+    "prompt": "Do people often make plans around their regular routines?"
+  },
+  {
+    "id": "p3-142",
+    "part": 3,
+    "topic": "Change and plans",
+    "prompt": "Who tend to change their daily routine more, young people or old people?"
+  },
+  {
+    "id": "p3-143",
+    "part": 3,
+    "topic": "Opinions",
+    "prompt": "When do most children begin to have their own opinions?"
+  },
+  {
+    "id": "p3-144",
+    "part": 3,
+    "topic": "Opinions",
+    "prompt": "Whose opinions are more important to children, their parents' or teachers'?"
+  },
+  {
+    "id": "p3-145",
+    "part": 3,
+    "topic": "Opinions",
+    "prompt": "Do children communicate more with teachers or with parents?"
+  },
+  {
+    "id": "p3-146",
+    "part": 3,
+    "topic": "Opinions",
+    "prompt": "Who do young people like to share opinions with?"
+  },
+  {
+    "id": "p3-147",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "What kinds of rules do schools in Vietnam have?"
+  },
+  {
+    "id": "p3-148",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "Do you think school rules are important?"
+  },
+  {
+    "id": "p3-149",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "Are children unhappy with the school rules?"
+  },
+  {
+    "id": "p3-150",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "How can parents and teachers help children understand and follow rules?"
+  },
+  {
+    "id": "p3-151",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "What are the rules people should obey at work?"
+  },
+  {
+    "id": "p3-152",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "What is the purpose of punishment?"
+  },
+  {
+    "id": "p3-153",
+    "part": 3,
+    "topic": "Ambition",
+    "prompt": "Why should children have ambitions?"
+  },
+  {
+    "id": "p3-154",
+    "part": 3,
+    "topic": "Ambition",
+    "prompt": "What do you think of people going after high positions?"
+  },
+  {
+    "id": "p3-155",
+    "part": 3,
+    "topic": "Ambition",
+    "prompt": "Why are some young people keen on being fans of superstars?"
+  },
+  {
+    "id": "p3-156",
+    "part": 3,
+    "topic": "Ambition",
+    "prompt": "Is it good for a person to be ambitious?"
+  },
+  {
+    "id": "p3-157",
+    "part": 3,
+    "topic": "Ambition",
+    "prompt": "Do you think it is necessary to be ambitious when working in a team in a company?"
+  },
+  {
+    "id": "p3-158",
+    "part": 3,
+    "topic": "Ambition",
+    "prompt": "Should parents support their children in pursuing their ambitions?"
+  },
+  {
+    "id": "p3-159",
+    "part": 3,
+    "topic": "Communication",
+    "prompt": "In what situations do people spend a long time responding to others' messages?"
+  },
+  {
+    "id": "p3-160",
+    "part": 3,
+    "topic": "Communication",
+    "prompt": "In what situations do people not respond to messages at all?"
+  },
+  {
+    "id": "p3-161",
+    "part": 3,
+    "topic": "Communication",
+    "prompt": "What would you do if you did not receive a reply after sending out a message?"
+  },
+  {
+    "id": "p3-162",
+    "part": 3,
+    "topic": "Communication",
+    "prompt": "Why do some people prefer sending a message instead of making a call?"
+  },
+  {
+    "id": "p3-163",
+    "part": 3,
+    "topic": "Communication",
+    "prompt": "How do you show your respect in your messages?"
+  },
+  {
+    "id": "p3-164",
+    "part": 3,
+    "topic": "Communication",
+    "prompt": "Why do some people feel angry when others don't reply to their message?"
+  },
+  {
+    "id": "p3-165",
+    "part": 3,
+    "topic": "Animals and pets",
+    "prompt": "Should schools teach children about animals?"
+  },
+  {
+    "id": "p3-166",
+    "part": 3,
+    "topic": "Animals and pets",
+    "prompt": "Some people think pets should not be kept in cities. What do you think?"
+  },
+  {
+    "id": "p3-167",
+    "part": 3,
+    "topic": "Animals and pets",
+    "prompt": "Many people regard pets as members of their family. What do you think?"
+  },
+  {
+    "id": "p3-168",
+    "part": 3,
+    "topic": "Animals and pets",
+    "prompt": "Do many people keep pets in your country?"
+  },
+  {
+    "id": "p3-169",
+    "part": 3,
+    "topic": "Animals and pets",
+    "prompt": "What are the advantages of keeping a pet?"
+  },
+  {
+    "id": "p3-170",
+    "part": 3,
+    "topic": "Animals and pets",
+    "prompt": "Why do people always tell children stories with animals?"
+  },
+  {
+    "id": "p3-171",
+    "part": 3,
+    "topic": "Advertising",
+    "prompt": "What are the advantages and disadvantages of advertisements?"
+  },
+  {
+    "id": "p3-172",
+    "part": 3,
+    "topic": "Advertising",
+    "prompt": "Why are many advertisements endorsed by celebrities? How useful are they?"
+  },
+  {
+    "id": "p3-173",
+    "part": 3,
+    "topic": "Advertising",
+    "prompt": "What is the most important factor in an advertisement?"
+  },
+  {
+    "id": "p3-174",
+    "part": 3,
+    "topic": "Advertising",
+    "prompt": "Why are some advertisements boring?"
+  },
+  {
+    "id": "p3-175",
+    "part": 3,
+    "topic": "Advertising",
+    "prompt": "Is advertising important for a company? Why?"
+  },
+  {
+    "id": "p3-176",
+    "part": 3,
+    "topic": "Advertising",
+    "prompt": "Which is more effective, online advertising or offline advertising?"
+  },
+  {
+    "id": "p3-177",
+    "part": 3,
+    "topic": "Holidays",
+    "prompt": "Where do people in your country often go for holidays?"
+  },
+  {
+    "id": "p3-178",
+    "part": 3,
+    "topic": "Holidays",
+    "prompt": "What is the ideal length for a holiday?"
+  },
+  {
+    "id": "p3-179",
+    "part": 3,
+    "topic": "Holidays",
+    "prompt": "How do people usually plan holidays?"
+  },
+  {
+    "id": "p3-180",
+    "part": 3,
+    "topic": "Holidays",
+    "prompt": "Is it important to plan a holiday?"
+  },
+  {
+    "id": "p3-181",
+    "part": 3,
+    "topic": "Artificial intelligence",
+    "prompt": "What are the advantages and disadvantages of AI?"
+  },
+  {
+    "id": "p3-182",
+    "part": 3,
+    "topic": "Artificial intelligence",
+    "prompt": "Do you think people today should learn about AI technology?"
+  },
+  {
+    "id": "p3-183",
+    "part": 3,
+    "topic": "Artificial intelligence",
+    "prompt": "Should children learn to use AI?"
+  },
+  {
+    "id": "p3-184",
+    "part": 3,
+    "topic": "Artificial intelligence",
+    "prompt": "How can AI help in our lives?"
+  },
+  {
+    "id": "p3-185",
+    "part": 3,
+    "topic": "Artificial intelligence",
+    "prompt": "Do you think students are overly reliant on AI?"
+  },
+  {
+    "id": "p3-186",
+    "part": 3,
+    "topic": "Artificial intelligence",
+    "prompt": "What can teachers do to stop students from relying too much on AI?"
+  },
+  {
+    "id": "p3-187",
+    "part": 3,
+    "topic": "Language learning",
+    "prompt": "Are there many people who can speak foreign languages in your country?"
+  },
+  {
+    "id": "p3-188",
+    "part": 3,
+    "topic": "Language learning",
+    "prompt": "Does speaking other languages help at work?"
+  },
+  {
+    "id": "p3-189",
+    "part": 3,
+    "topic": "Language learning",
+    "prompt": "Do people learn any languages other than English?"
+  },
+  {
+    "id": "p3-190",
+    "part": 3,
+    "topic": "Language learning",
+    "prompt": "Why is it easier for children to learn new things than for adults?"
+  },
+  {
+    "id": "p3-191",
+    "part": 3,
+    "topic": "Language learning",
+    "prompt": "How do people learn new things?"
+  },
+  {
+    "id": "p3-192",
+    "part": 3,
+    "topic": "Food and festivals",
+    "prompt": "Why are there special foods on special occasions or events?"
+  },
+  {
+    "id": "p3-193",
+    "part": 3,
+    "topic": "Food and festivals",
+    "prompt": "What are the differences between everyday food and festival food?"
+  },
+  {
+    "id": "p3-194",
+    "part": 3,
+    "topic": "Food and festivals",
+    "prompt": "Are there any differences between the food people eat today and the food people ate in the past?"
+  },
+  {
+    "id": "p3-195",
+    "part": 3,
+    "topic": "Sports",
+    "prompt": "Why do some people like to watch sports events?"
+  },
+  {
+    "id": "p3-196",
+    "part": 3,
+    "topic": "Sports",
+    "prompt": "Where do people normally watch sports events?"
+  },
+  {
+    "id": "p3-197",
+    "part": 3,
+    "topic": "Sports",
+    "prompt": "What are the advantages of watching sports events online?"
+  },
+  {
+    "id": "p3-198",
+    "part": 3,
+    "topic": "Sports",
+    "prompt": "What sports matches are suitable for children to attend?"
+  },
+  {
+    "id": "p3-199",
+    "part": 3,
+    "topic": "Medical careers",
+    "prompt": "Do you think being a doctor is easy or difficult?"
+  },
+  {
+    "id": "p3-200",
+    "part": 3,
+    "topic": "Medical careers",
+    "prompt": "Do you think learning biology is interesting for children?"
+  },
+  {
+    "id": "p3-201",
+    "part": 3,
+    "topic": "Teamwork",
+    "prompt": "Why do some people prefer to work by themselves?"
+  },
+  {
+    "id": "p3-202",
+    "part": 3,
+    "topic": "Teamwork",
+    "prompt": "What should a leader do to make team members want to follow him or her?"
+  },
+  {
+    "id": "p3-203",
+    "part": 3,
+    "topic": "Teamwork",
+    "prompt": "Should students learn to do group work?"
+  },
+  {
+    "id": "p3-204",
+    "part": 3,
+    "topic": "Teamwork",
+    "prompt": "What group tasks are there in schools?"
+  },
+  {
+    "id": "p3-205",
+    "part": 3,
+    "topic": "Business",
+    "prompt": "Why do some people start their own business?"
+  },
+  {
+    "id": "p3-206",
+    "part": 3,
+    "topic": "Business",
+    "prompt": "Should governments provide financial support to start-ups?"
+  },
+  {
+    "id": "p3-207",
+    "part": 3,
+    "topic": "Business",
+    "prompt": "Do most people prefer shopping at big stores or small stores?"
+  },
+  {
+    "id": "p3-208",
+    "part": 3,
+    "topic": "Business",
+    "prompt": "What makes a business successful?"
+  },
+  {
+    "id": "p3-209",
+    "part": 3,
+    "topic": "Business",
+    "prompt": "What makes a business fail?"
+  },
+  {
+    "id": "p3-210",
+    "part": 3,
+    "topic": "Gardening and plants",
+    "prompt": "What are the advantages of growing vegetables or flowers at home?"
+  },
+  {
+    "id": "p3-211",
+    "part": 3,
+    "topic": "Gardening and plants",
+    "prompt": "Do many people grow vegetables or flowers at home in your country?"
+  },
+  {
+    "id": "p3-212",
+    "part": 3,
+    "topic": "Gardening and plants",
+    "prompt": "Is it easy to grow plants at home?"
+  },
+  {
+    "id": "p3-213",
+    "part": 3,
+    "topic": "Gardening and plants",
+    "prompt": "Why do some people like to grow plants?"
+  },
+  {
+    "id": "p3-214",
+    "part": 3,
+    "topic": "Gardening and plants",
+    "prompt": "Why do some people prefer to grow their own fruits and vegetables instead of buying them from the market?"
+  },
+  {
+    "id": "p3-215",
+    "part": 3,
+    "topic": "Videos and media",
+    "prompt": "What kind of videos do people in your country like to watch?"
+  },
+  {
+    "id": "p3-216",
+    "part": 3,
+    "topic": "Videos and media",
+    "prompt": "Which is more helpful, watching videos or reading books?"
+  },
+  {
+    "id": "p3-217",
+    "part": 3,
+    "topic": "Videos and media",
+    "prompt": "What skills can people learn from watching videos?"
+  },
+  {
+    "id": "p3-218",
+    "part": 3,
+    "topic": "Videos and media",
+    "prompt": "Are there any differences between the videos that young people and old people like to watch?"
+  },
+  {
+    "id": "p3-219",
+    "part": 3,
+    "topic": "Architecture and buildings",
+    "prompt": "Are there many tall buildings in your country?"
+  },
+  {
+    "id": "p3-220",
+    "part": 3,
+    "topic": "Architecture and buildings",
+    "prompt": "What are the differences between those tall buildings in your country?"
+  },
+  {
+    "id": "p3-221",
+    "part": 3,
+    "topic": "Architecture and buildings",
+    "prompt": "Why are different places laid out and designed differently?"
+  },
+  {
+    "id": "p3-222",
+    "part": 3,
+    "topic": "Boredom",
+    "prompt": "Why do most children think education is boring?"
+  },
+  {
+    "id": "p3-223",
+    "part": 3,
+    "topic": "Boredom",
+    "prompt": "Why aren't young people willing to listen to the experiences of older people?"
+  },
+  {
+    "id": "p3-224",
+    "part": 3,
+    "topic": "Boredom",
+    "prompt": "What can people do when they feel bored?"
+  },
+  {
+    "id": "p3-225",
+    "part": 3,
+    "topic": "Boredom",
+    "prompt": "Why are some teachers' classes boring? Are there any solutions?"
+  },
+  {
+    "id": "p3-226",
+    "part": 3,
+    "topic": "Change and plans",
+    "prompt": "Do people often change their plans?"
+  },
+  {
+    "id": "p3-227",
+    "part": 3,
+    "topic": "Change and plans",
+    "prompt": "Would you tell others if you change your plan?"
+  },
+  {
+    "id": "p3-228",
+    "part": 3,
+    "topic": "Change and plans",
+    "prompt": "Why do you think parents still make plans for their children nowadays?"
+  },
+  {
+    "id": "p3-229",
+    "part": 3,
+    "topic": "Change and plans",
+    "prompt": "How does technology help people make plans?"
+  },
+  {
+    "id": "p3-230",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "What rules should students follow at school?"
+  },
+  {
+    "id": "p3-231",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "Do people in your country usually obey the law?"
+  },
+  {
+    "id": "p3-232",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "What kinds of behavior are considered as good behavior?"
+  },
+  {
+    "id": "p3-233",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "Do you think children can learn about the law outside of school?"
+  },
+  {
+    "id": "p3-234",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "What are the benefits for people to obey rules?"
+  },
+  {
+    "id": "p3-235",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "How can parents teach children to obey rules?"
+  },
+  {
+    "id": "p3-236",
+    "part": 3,
+    "topic": "Decision making",
+    "prompt": "Do you think children sometimes have to make important decisions?"
+  },
+  {
+    "id": "p3-237",
+    "part": 3,
+    "topic": "Decision making",
+    "prompt": "What important decisions do teenagers need to make after graduation?"
+  },
+  {
+    "id": "p3-238",
+    "part": 3,
+    "topic": "Decision making",
+    "prompt": "Who can children turn to for help when making a decision?"
+  },
+  {
+    "id": "p3-239",
+    "part": 3,
+    "topic": "Decision making",
+    "prompt": "Do you think advertisements can influence our decisions when shopping?"
+  },
+  {
+    "id": "p3-240",
+    "part": 3,
+    "topic": "Decision making",
+    "prompt": "Do you think the influence of advertising is good?"
+  },
+  {
+    "id": "p3-241",
+    "part": 3,
+    "topic": "Decision making",
+    "prompt": "How do people usually make important decisions?"
+  },
+  {
+    "id": "p3-242",
+    "part": 3,
+    "topic": "Making friends",
+    "prompt": "Do you still keep in touch with your friends from childhood? Why or why not?"
+  },
+  {
+    "id": "p3-243",
+    "part": 3,
+    "topic": "Making friends",
+    "prompt": "How important is childhood friendship to children?"
+  },
+  {
+    "id": "p3-244",
+    "part": 3,
+    "topic": "Making friends",
+    "prompt": "What do you think of communicating via social media?"
+  },
+  {
+    "id": "p3-245",
+    "part": 3,
+    "topic": "Making friends",
+    "prompt": "Do you think online communication through social media will replace face-to-face communication?"
+  },
+  {
+    "id": "p3-246",
+    "part": 3,
+    "topic": "Making friends",
+    "prompt": "What's the difference between having younger friends and older friends?"
+  },
+  {
+    "id": "p3-247",
+    "part": 3,
+    "topic": "Making friends",
+    "prompt": "Has technology changed people's friendships? How?"
+  },
+  {
+    "id": "p3-248",
+    "part": 3,
+    "topic": "Transportation",
+    "prompt": "Do you like to use public transport?"
+  },
+  {
+    "id": "p3-249",
+    "part": 3,
+    "topic": "Transportation",
+    "prompt": "Would you rather be in a car or a bus in a traffic jam?"
+  },
+  {
+    "id": "p3-250",
+    "part": 3,
+    "topic": "Transportation",
+    "prompt": "How can we solve the traffic jam problem?"
+  },
+  {
+    "id": "p3-251",
+    "part": 3,
+    "topic": "Transportation",
+    "prompt": "Do you think developing public transport can solve traffic jam problems?"
+  },
+  {
+    "id": "p3-252",
+    "part": 3,
+    "topic": "Transportation",
+    "prompt": "Do you think the high ways will help reduce traffic jams?"
+  },
+  {
+    "id": "p3-253",
+    "part": 3,
+    "topic": "Transportation",
+    "prompt": "What are good ways to manage traffic?"
+  },
+  {
+    "id": "p3-254",
+    "part": 3,
+    "topic": "Leisure time",
+    "prompt": "Do people like to spend their leisure time out in your country?"
+  },
+  {
+    "id": "p3-255",
+    "part": 3,
+    "topic": "Leisure time",
+    "prompt": "How do people spend their leisure time in your country?"
+  },
+  {
+    "id": "p3-256",
+    "part": 3,
+    "topic": "Leisure time",
+    "prompt": "How does technology affect the way people spend their leisure time?"
+  },
+  {
+    "id": "p3-257",
+    "part": 3,
+    "topic": "Leisure time",
+    "prompt": "Do you think only old people have time for leisure?"
+  },
+  {
+    "id": "p3-258",
+    "part": 3,
+    "topic": "Leisure time",
+    "prompt": "Why do people like to have days off?"
+  },
+  {
+    "id": "p3-259",
+    "part": 3,
+    "topic": "Leisure time",
+    "prompt": "Going out to have holidays is tiring. Why do people still want to do it?"
+  },
+  {
+    "id": "p3-260",
+    "part": 3,
+    "topic": "Organization",
+    "prompt": "How would you feel when you were not well prepared for something?"
+  },
+  {
+    "id": "p3-261",
+    "part": 3,
+    "topic": "Organization",
+    "prompt": "Do you prefer to prepare and organize an activity or just take part in an activity?"
+  },
+  {
+    "id": "p3-262",
+    "part": 3,
+    "topic": "Organization",
+    "prompt": "How can parents help children to be organized?"
+  },
+  {
+    "id": "p3-263",
+    "part": 3,
+    "topic": "Organization",
+    "prompt": "On what occasions do people need to be organized?"
+  },
+  {
+    "id": "p3-264",
+    "part": 3,
+    "topic": "Organization",
+    "prompt": "Does everything need to be well prepared?"
+  },
+  {
+    "id": "p3-265",
+    "part": 3,
+    "topic": "Organization",
+    "prompt": "Do people need others' help when organizing things?"
+  },
+  {
+    "id": "p3-266",
+    "part": 3,
+    "topic": "Food and festivals",
+    "prompt": "In your country, do people nowadays cook at home as frequently as people did in the past?"
+  },
+  {
+    "id": "p3-267",
+    "part": 3,
+    "topic": "Food and festivals",
+    "prompt": "What do you think of people using their mobile phones during a meal?"
+  },
+  {
+    "id": "p3-268",
+    "part": 3,
+    "topic": "Food and festivals",
+    "prompt": "What are the differences between special food in Vietnam and other countries?"
+  },
+  {
+    "id": "p3-269",
+    "part": 3,
+    "topic": "Food and festivals",
+    "prompt": "Is there any food in your country that is eaten at special times or on special occasions?"
+  },
+  {
+    "id": "p3-270",
+    "part": 3,
+    "topic": "Food and festivals",
+    "prompt": "Why are some people willing to spend a lot of money on meals on special days?"
+  },
+  {
+    "id": "p3-271",
+    "part": 3,
+    "topic": "Food and festivals",
+    "prompt": "Do you think it's good to communicate when eating with your family?"
+  },
+  {
+    "id": "p3-272",
+    "part": 3,
+    "topic": "Language learning",
+    "prompt": "What are the advantages and disadvantages of learning a language?"
+  },
+  {
+    "id": "p3-273",
+    "part": 3,
+    "topic": "Language learning",
+    "prompt": "Some people think that technology has made it unnecessary to learn languages. What do you think?"
+  },
+  {
+    "id": "p3-274",
+    "part": 3,
+    "topic": "Language learning",
+    "prompt": "What difficulties do people face when learning a language?"
+  },
+  {
+    "id": "p3-275",
+    "part": 3,
+    "topic": "Language learning",
+    "prompt": "Do you think language learning is important? Why?"
+  },
+  {
+    "id": "p3-276",
+    "part": 3,
+    "topic": "Language learning",
+    "prompt": "Which is better, to study a language alone or to study it in a group? Why?"
+  },
+  {
+    "id": "p3-277",
+    "part": 3,
+    "topic": "Language learning",
+    "prompt": "What's the best way to learn a language?"
+  },
+  {
+    "id": "p3-278",
+    "part": 3,
+    "topic": "Time management",
+    "prompt": "Is it good to arrive early in any situation?"
+  },
+  {
+    "id": "p3-279",
+    "part": 3,
+    "topic": "Time management",
+    "prompt": "Do you know anyone who likes to get up early?"
+  },
+  {
+    "id": "p3-280",
+    "part": 3,
+    "topic": "Time management",
+    "prompt": "Why do people get up early?"
+  },
+  {
+    "id": "p3-281",
+    "part": 3,
+    "topic": "Time management",
+    "prompt": "What kinds of occasions need people to arrive early?"
+  },
+  {
+    "id": "p3-282",
+    "part": 3,
+    "topic": "Time management",
+    "prompt": "Why do some people like to stay up late?"
+  },
+  {
+    "id": "p3-283",
+    "part": 3,
+    "topic": "News",
+    "prompt": "Do people read the newspaper where you live?"
+  },
+  {
+    "id": "p3-284",
+    "part": 3,
+    "topic": "News",
+    "prompt": "Do people prefer local or international news?"
+  },
+  {
+    "id": "p3-285",
+    "part": 3,
+    "topic": "News",
+    "prompt": "Do you think it's important to have a national identity?"
+  },
+  {
+    "id": "p3-286",
+    "part": 3,
+    "topic": "News",
+    "prompt": "How can people develop their national identity?"
+  },
+  {
+    "id": "p3-287",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "How does technology affect the law?"
+  },
+  {
+    "id": "p3-288",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "What kinds of rules do schools in China have?"
+  },
+  {
+    "id": "p3-289",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "Will there be a law that is universally accepted?"
+  },
+  {
+    "id": "p3-290",
+    "part": 3,
+    "topic": "Rules",
+    "prompt": "What environmental laws does your country already have?"
+  },
+  {
+    "id": "p3-291",
+    "part": 3,
+    "topic": "Homes and visiting",
+    "prompt": "Do Vietnamese people like to visit others' homes?"
+  },
+  {
+    "id": "p3-292",
+    "part": 3,
+    "topic": "Homes and visiting",
+    "prompt": "What do Vietnamese people do when they visit others?"
+  },
+  {
+    "id": "p3-293",
+    "part": 3,
+    "topic": "Homes and visiting",
+    "prompt": "What kind of place do people in your country like to live in?"
+  },
+  {
+    "id": "p3-294",
+    "part": 3,
+    "topic": "Homes and visiting",
+    "prompt": "What's the difference between homes in cities and those in the countryside?"
+  },
+  {
+    "id": "p3-295",
+    "part": 3,
+    "topic": "Rivers and lakes",
+    "prompt": "What are the popular water sports in your country?"
+  },
+  {
+    "id": "p3-296",
+    "part": 3,
+    "topic": "Rivers and lakes",
+    "prompt": "Are rivers and lakes important to a country?"
+  },
+  {
+    "id": "p3-297",
+    "part": 3,
+    "topic": "Rivers and lakes",
+    "prompt": "How can rivers and lakes benefit local people?"
+  },
+  {
+    "id": "p3-298",
+    "part": 3,
+    "topic": "Rivers and lakes",
+    "prompt": "Do you think rivers and lakes attract tourists?"
+  },
+  {
+    "id": "p3-299",
+    "part": 3,
+    "topic": "Rivers and lakes",
+    "prompt": "How do rivers and lakes affect local tourism?"
+  },
+  {
+    "id": "p3-300",
+    "part": 3,
+    "topic": "Rivers and lakes",
+    "prompt": "Are rivers and lakes good for transport? Why?"
+  },
+  {
+    "id": "p3-301",
+    "part": 3,
+    "topic": "Business",
+    "prompt": "Do you think governments should provide financial support to companies?"
+  },
+  {
+    "id": "p3-302",
+    "part": 3,
+    "topic": "Business",
+    "prompt": "Do you think companies should donate money to help society?"
+  },
+  {
+    "id": "p3-303",
+    "part": 3,
+    "topic": "Business",
+    "prompt": "Do you think customer satisfaction is important for a company?"
+  },
+  {
+    "id": "p3-304",
+    "part": 3,
+    "topic": "Travel",
+    "prompt": "Why do you think some people choose not to travel abroad?"
+  },
+  {
+    "id": "p3-305",
+    "part": 3,
+    "topic": "Travel",
+    "prompt": "Do you think a gap period in life is important?"
   }
 ]
